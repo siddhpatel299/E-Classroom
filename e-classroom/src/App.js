@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {TocRounded} from '@material-ui/icons';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='sidebar_container'>
+      <div className='sidebar'>
+      {/* Lines icon */}
+        <div className='lines_icon'>
+        <TocRounded />
+        </div>
+        {/* Profile */}
+        <div className='profile'>
+            <img 
+              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WEmfJCME77ZGymWrlJkXRv5bWg9QQmQEzw&usqp=CAU'
+              alt='Profile Photo'
+            />
+        </div>
+        {/* Groups */}
+        <div className='groups'>
+          <div className='group'>
+          
+          </div>
+        </div>
+
+      </div>
+      
+      </div>
+      <div className='body_container'>I am body container</div>
     </div>
   );
 }
