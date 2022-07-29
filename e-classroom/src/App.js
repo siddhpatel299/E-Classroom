@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import {TocRounded} from '@material-ui/icons';
+import {AddBoxRounded, CreateRounded, DashboardRounded, FormatListBulletedRounded, HomeWorkRounded, PeopleAltRounded, TocRounded} from '@material-ui/icons';
+import Item from './components/Item';
 
 function App() {
   return (
@@ -21,6 +22,27 @@ function App() {
         {/* Groups */}
         <div className='groups'>
           <div className='group'>
+          <h3>Class</h3>
+          <Item 
+          icon={<AddBoxRounded/>}
+          name = "Join Class"
+          />
+          <Item 
+          icon={<CreateRounded/>}
+          name = "Create Class"
+          />
+          <Item 
+          icon={<HomeWorkRounded/>}
+          name = "Classwork"
+          />
+          <Item 
+          icon={<FormatListBulletedRounded/>}
+          name = "Classnotes"
+          />
+          <Item 
+          icon={<PeopleAltRounded/>}
+          name = "Classmates"
+          />
           
           </div>
         </div>
@@ -28,7 +50,7 @@ function App() {
       </div>
       
       </div>
-      <div className='body_container'>I am body container</div>
+      <div className='body_container'></div>
     </div>
   );
 }
